@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChowBot - Taste the Future</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="logo">🥗 ChowBot</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#location">Location</a>
+      <a href="#aboutus">About</a>
+      <a href="#contactus">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to ChowBot</h1>
+      <p>Smart ordering. Delicious food. Delivered fast.</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="menu1.jpg" alt="Burger Delight">
+      </div>
+      <div class="menu-item">
+        <img src="menu2.jpg" alt="Paneer Wrap">
+      </div>
+      <div class="menu-item">
+        <img src="menu3.jpg" alt="ChowMein Bowl">
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Find Us</h2>
+    <p>📍 22 Food Street, New Delhi</p>
+  </section>
+
+  <section id="aboutus">
+    <h2>About ChowBot</h2>
+    <p>ChowBot is your AI-powered fast food assistant. We blend technology with taste to give you a modern, hassle-free ordering experience.</p>
+  </section>
+
+  <section id="contactus">
+    <h2>Contact Us</h2>
+    <p>📞 +91 9876543210</p>
+    <p>✉️ support@chowbot.in</p>
+  </section>
+
+  <!-- Dialogflow Chatbot -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="ChowBot"
+    agent-id="debcdf6a-39bd-4e9e-be8f-1d24fb088e28"
+    language-code="en"
+    class="chat-bot"
+  ></df-messenger>
+
+  <footer>
+    <p>© 2025 ChowBot. Powered by smart food automation.</p>
+  </footer>
+</body>
+</html>
